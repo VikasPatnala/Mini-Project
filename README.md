@@ -1,2 +1,2 @@
 # Mini-Project
-Based on Convex hulls and Range queries
+Based on Convex hull and Range queries
