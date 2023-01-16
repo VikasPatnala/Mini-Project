@@ -85,6 +85,7 @@ int main()
     // print_point(low_left);
     // print_point(high_right);
 
+    // checking whether the given points lie on a same vertical line
     if(low_left.x_cor == high_right.x_cor) {
         vec_of_points.erase(vec_of_points.begin() + 1, vec_of_points.end() - 1);
         print_hull("", vec_of_points);
@@ -94,6 +95,7 @@ int main()
     vector<point> upper_hull_points;
     vector<point> lower_hull_points;
 
+    // dividing points into two groups Upper hull and Lower hull
     for(int i = 1; i < num_of_points - 1; i++) {
         int check = compareside(low_left, high_right, vec_of_points[i]);
         if(check == 1){
@@ -150,6 +152,12 @@ int main()
         }
     }
     print_hull("Lower ", lower_hull);
+
+    vector<point> convex_hull;
+    convex_hull.insert(convex_hull.end(), upper_hull.begin(), upper_hull.end());
+    convex_hull.insert(convex_hull.end(), lower_hull.begin() + 1, lower_hull.end() - 1);
+
+    print_hull("", convex_hull);
 
     return 0;
 }
