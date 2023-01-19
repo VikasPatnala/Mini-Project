@@ -17,5 +17,5 @@ The convex hull of above points given by algorithm is (1, 1) (1, 10) (10, 10) (1
 - First sort the given 2 dimensional points
 - Pick lowest left, highest right points as our boundray for upper and lower hulls
 - Divide points into two parts upper and lower hull points
-- Traverse to each point in upper hull from left to right and find the cross product with last two points if it is positive then take else remove that point
+- Traverse to each point in upper hull from left to right and find the cross product with last two points if it is negative then take else remove that point
 - Similarly for traverse each point in lower hull from right to left
