@@ -10,6 +10,7 @@ The [algorithm](Code/main.cpp) will find convex hull of given 2d points and the 
 
 The algorithm also gives correct output in-case of collinear points
 <img src="Images/rectangle_points.png" width="350" height="350" align="middle">
+
 The convex hull of above points given by algorithm is (1, 1) (1, 10) (10, 10) (10, 1)
 
 ### [Algorithm](Code/main.cpp)
