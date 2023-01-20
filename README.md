@@ -22,4 +22,4 @@ The convex hull of above points given by algorithm is (1, 1) (1, 10) (10, 10) (1
 
 #### Time Complexity
 - As every point is atmost once poped from the stack and pushed to the stack atmost once hence time complexity will be $\theta(n)$
-- As initial sorting of points takes $\theta(nlogn)$ the overall time complexity of the algorithm is $O(nlogn)$
+- As initial sorting of points takes $O(nlogn)$ the overall time complexity of the algorithm is $O(nlogn)$
