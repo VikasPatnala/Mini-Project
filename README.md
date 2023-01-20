@@ -17,5 +17,9 @@ The convex hull of above points given by algorithm is (1, 1) (1, 10) (10, 10) (1
 - First sort the given 2 dimensional points
 - Pick lowest left, highest right points as our boundray for upper and lower hulls
 - Divide points into two parts upper and lower hull points
-- Traverse to each point in upper hull from left to right and find the cross product with last two points if it is negative then take else remove that point
+- Maintain a result stack traverse to each point in upper hull from left to right and find the cross product with last two points in stack if it is negative then add point to stack else remove previous point from stack and add current point
 - Similarly for traverse each point in lower hull from right to left
+
+#### Time Complexity
+- As every point is atmost once poped from the stack and pushed to the stack atmost once hence time complexity will be $\theta(n)$
+- As initial sorting of points takes $\theta(nlogn)$ the overall time complexity of the algorithm is $O(nlogn)$
